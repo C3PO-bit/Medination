@@ -1,0 +1,3 @@
+Main Color - #25203f
+Secondary Color - #787A9E
+Sub Color - 2f294f

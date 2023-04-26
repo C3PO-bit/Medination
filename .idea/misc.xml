@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_blue.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_green.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_pink.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_salmon.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_yellow.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/bg_menu.xml" value="0.233" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_focus_cardview_image.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_home.xml" value="0.233" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_home_back_svg_2.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_main_activity_bg.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_meditation.xml" value="0.233" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/item_home.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/rv_item_background.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_media_player.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_splash_screen.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_affirmations.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_meditations.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_music.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_home.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_top_pick.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_media_player.xml" value="0.176" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_splash_screen.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_category.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_recyclerview.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_top_pick.xml" value="0.264" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects/Medination project resources/app/src/main/res/drawable/ic_home_back_svg.xml" value="0.133" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects/Medination project resources/app/src/main/res/drawable/ic_home_back_svg_2.xml" value="0.133" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects/Medination project resources/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Jorda/Desktop/Kotlin Projects/Medination project resources/app/src/main/res/layout/activity_splash_screen.xml" value="0.2037037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/miHome"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+
+    <item
+        android:id="@+id/miMeditations"
+        android:icon="@drawable/ic_meditation"
+        android:title="" />
+
+    <item
+        android:id="@+id/miAffirmations"
+        android:icon="@drawable/ic_affirmations"
+        android:title="" />
+
+    <item
+        android:id="@+id/miMusic"
+        android:icon="@drawable/ic_music"
+        android:title="" />
+</menu>

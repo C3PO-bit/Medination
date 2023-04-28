@@ -10,10 +10,11 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MediaAdapter(val mediaItems: List<Media>): RecyclerView.Adapter<MediaAdapter.MediaViewHolder>(){
+class MediaAdapter(val mediaItems: List<Media>) :
+    RecyclerView.Adapter<MediaAdapter.MediaViewHolder>() {
 
 
-    inner class MediaViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    inner class MediaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val mediaLayoutBackground = itemView.findViewById<LinearLayout>(R.id.ll_item_holder)
         val mediaImage = itemView.findViewById<ImageView>(R.id.iv_category)
         val mediaTitle = itemView.findViewById<TextView>(R.id.tv_title)
@@ -21,13 +22,19 @@ class MediaAdapter(val mediaItems: List<Media>): RecyclerView.Adapter<MediaAdapt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MediaViewHolder {
+
         val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_card_home,parent,false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_card_home, parent, false)
+
+        itemView.layoutParams.width = parent.context.resources.displayMetrics.widthPixels / 2
+
         return MediaViewHolder(itemView)
+
+
     }
 
     override fun onBindViewHolder(holder: MediaViewHolder, position: Int) {
-        val mediaList =mediaItems[position]
+        val mediaList = mediaItems[position]
         holder.mediaLayoutBackground.setBackgroundResource(mediaList.backgroundResource)
         holder.mediaImage.setImageResource(mediaList.image)
         holder.mediaTitle.text = mediaList.title

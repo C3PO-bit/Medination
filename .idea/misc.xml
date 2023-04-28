@@ -8,6 +8,7 @@
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_pink.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_salmon.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable-v24/rv_item_bg_yellow.xml" value="0.2305" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/bg_home_art.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/bg_menu.xml" value="0.233" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_focus_cardview_image.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_home.xml" value="0.233" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_main_activity_bg.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_meditation.xml" value="0.233" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/ic_relax_before_bed.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/item_home.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/drawable/rv_item_background.xml" value="0.2305" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
@@ -22,8 +24,10 @@
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/activity_splash_screen.xml" value="0.35052083333333334" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_affirmations.xml" value="0.35052083333333334" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_meditations.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_meditations.xml" value="0.2" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/fragment_music.xml" value="0.35052083333333334" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_card_home.xml" value="0.34512820512820513" />
+        <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_category.xml" value="0.35052083333333334" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_home.xml" value="0.35052083333333334" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/layout/item_top_pick.xml" value="0.35052083333333334" />
         <entry key="..\:/Igor/Kotlin/Kotlin Projects Portfolio/Medination/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.35052083333333334" />

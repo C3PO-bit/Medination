@@ -1,2 +1,5 @@
+![splash](https://user-images.githubusercontent.com/125768714/235209666-66160696-fdef-4634-baad-11da6a1960c4.png)
 ![home](https://user-images.githubusercontent.com/125768714/235208316-015932f9-ddc7-4205-95e8-e14a1fd97e78.png)
 ![meditations screen](https://user-images.githubusercontent.com/125768714/235208338-996c4bfb-1b1d-481a-b24a-bab04e725871.png)
+![AFFIRM](https://user-images.githubusercontent.com/125768714/235209689-89d29b0f-78d8-46e5-b1a3-8404ec36d71a.png)
+![bin beats](https://user-images.githubusercontent.com/125768714/235209695-d1db2646-6ad6-4ed3-b038-dc4281fcac98.png)

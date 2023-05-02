@@ -1,12 +1,12 @@
 package com.igor.medination
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import org.json.JSONArray
 
 
 class MusicFragment : Fragment(R.layout.fragment_music) {
@@ -19,49 +19,36 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
     }
 
     private fun setupAdapter(recyclerView: RecyclerView): CategoryItemsAdapter {
+
+        val jsonString = resources.openRawResource(R.raw.binaural_beats).bufferedReader().use  {
+            it.readText()
+        }
+        val jsonArray = JSONArray(jsonString)
         val items = mutableListOf<CategoryItems>()
-        items.add(
-            CategoryItems(
-                "Deep Relaxation",
-                "This binaural beat track is designed to enhance your cognitive function and improve your ability to focus and concentrate.",
-                "10 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Power Nap",
-                "This binaural beat track is designed to help you take a quick power nap and wake up feeling refreshed and rejuvenated.",
-                "7 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Anxiety Relief",
-                "This binaural beat track is designed to help alleviate symptoms of anxiety and promote a sense of calm and relaxation.",
-                "9 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Focused Mind",
-                "Release negative thoughts and emotions towards your body and cultivate a sense of love and gratitude.",
-                "10 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Mood Booster",
-                "This binaural beat track is designed to help lift your mood and promote feelings of positivity and happiness",
-                "6 min"
-            )
-        )
-        val adapter = CategoryItemsAdapter(items)
+        for (i in 0 until jsonArray.length()) {
+            val jsonObject = jsonArray.getJSONObject(i)
+            val title = jsonObject.getString("title")
+            val description = jsonObject.getString("description")
+            val duration = jsonObject.getString("duration")
+
+            val item = CategoryItems(title,description,duration)
+            items.add(item)
+        }
+
+        val listener = object : CategoryItemsAdapter.OnItemClickListener{
+            override fun onItemClick(position: Int) {
+                val intent = Intent(requireContext(),MediaPlayerActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        val adapter  = CategoryItemsAdapter(items,listener)
         recyclerView.adapter = adapter
         recyclerView.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
-        adapter.notifyDataSetChanged()
+
         return adapter
+
     }
 
 }

@@ -1,10 +1,12 @@
 package com.igor.medination
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import org.json.JSONArray
 
 
 class MeditationsFragment : Fragment(R.layout.fragment_meditations) {
@@ -18,49 +20,42 @@ class MeditationsFragment : Fragment(R.layout.fragment_meditations) {
     }
 
     private fun setupAdapter(recyclerView: RecyclerView): CategoryItemsAdapter {
+
+        val jsonString = resources.openRawResource(R.raw.meditations).bufferedReader().use {
+            it.readText()
+        }
+
+        val jsonArray = JSONArray(jsonString)
         val items = mutableListOf<CategoryItems>()
-        items.add(
-            CategoryItems(
-                "Overcome Social Anxiety",
-                " Let go of anxious thoughts and emotions and find peace in the present moment.",
-                "5 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Relaxing Before Bedtime",
-                "Prepare your mind and body for a peaceful night's rest with this relaxation practice",
-                "7 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Loving Yourself",
-                "Release negative thoughts and emotions towards your body and cultivate a sense of love and gratitude.",
-                "10 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Focused Mind",
-                "Release negative thoughts and emotions towards your body and cultivate a sense of love and gratitude.",
-                "10 min"
-            )
-        )
-        items.add(
-            CategoryItems(
-                "Forgiveness and Release",
-                " Let go of past grievances and cultivate forgiveness and compassion towards yourself and others",
-                "6 min"
-            )
-        )
-        val adapter = CategoryItemsAdapter(items)
+
+        for (i in 0 until jsonArray.length()) {
+            val jsonObject = jsonArray.getJSONObject(i)
+            val title = jsonObject.getString("title")
+            val description = jsonObject.getString("description")
+            val duration = jsonObject.getString("duration")
+
+            val item = CategoryItems(title, description, duration)
+            items.add(item)
+        }
+
+
+        val listener = object : CategoryItemsAdapter.OnItemClickListener {
+            override fun onItemClick(position: Int) {
+                val intent = Intent(requireContext(), MediaPlayerActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        val adapter = CategoryItemsAdapter(items, listener)
+        recyclerView.adapter = adapter
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
         adapter.notifyDataSetChanged()
         return adapter
+
     }
 
 
